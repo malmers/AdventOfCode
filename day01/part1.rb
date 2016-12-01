@@ -11,12 +11,12 @@ position = Vector[0, 0]
 direction = Vector[0, 1]
 
 input.each do |word|
-	if word[0] == 'L'
-		direction = Matrix[[0, -1],
-											 [1, 0]] * direction
-	else
-		direction = Matrix[[0, 1],
-											[-1, 0]] * direction
+  if word[0] == 'L'
+    direction = Matrix[[0, -1],
+                       [1, 0]] * direction
+  else
+    direction = Matrix[[0, 1],
+                      [-1, 0]] * direction
   end
 
   position += direction * word[1..-1].to_i
