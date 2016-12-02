@@ -3,7 +3,7 @@ require "matrix"
 # Advent of Code
 # Solution based on linear algebra
 
-print "Enter input: \n"
+puts "Enter input:"
 input = gets
 input = input.split(", ")
 
@@ -23,5 +23,4 @@ input.each do |word|
 end
 
 print "Distance: "
-print position[0].abs + position[1].abs
-print "\n"
+puts position[0].abs + position[1].abs
