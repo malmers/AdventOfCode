@@ -1,5 +1,4 @@
 # Advent of Code - Day three
-require "matrix"
 
 class Advent
   attr_accessor :invalid
@@ -15,14 +14,11 @@ class Advent
 
     input = input.flatten 1
 
-    puts input.size
-
     input.select! do |triangle|
       triangle.sort!
       triangle[0] + triangle[1] > triangle[2]
     end
 
-    puts "#{input}"
     puts input.size
   end
 end
