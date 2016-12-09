@@ -1,4 +1,4 @@
-# Advent of Code - Day six
+# Advent of Code - Day seven
 
 class Advent
 
